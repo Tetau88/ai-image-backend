@@ -9,7 +9,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send('AI Image Generator Backend is running!');
+  res.send('AI Image Generator Backend is live and updated!');
 });
 
 app.post('/generate', async (req, res) => {
