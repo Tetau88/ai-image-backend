@@ -1,3 +1,5 @@
+app.use(express.json()); // handles JSON body
+
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
