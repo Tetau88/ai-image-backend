@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const app = express();
 app.use(cors());
-app.use(express.json()); // This line is super important
+app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
 
@@ -15,7 +15,6 @@ app.get('/', (req, res) => {
 app.post('/generate', async (req, res) => {
   const { prompt, style, size, count } = req.body;
 
-  // Placeholder response — we’ll plug in real AI later
   res.json({
     success: true,
     images: [
